@@ -1,0 +1,44 @@
+{
+  "title": "Zapier Solution Partner & AI Automation Agency B2B Enricher",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchQuery": {
+      "title": "Keyword / Tool / Industry / Location Filter",
+      "type": "string",
+      "description": "Optional keyword to filter Zapier Solution Partners by agency name, tool (e.g., ChatGPT, Airtable, HubSpot, ClickUp, Salesforce), industry, or location.",
+      "editor": "textfield",
+      "default": ""
+    },
+    "partnerTierFilter": {
+      "title": "Zapier Partner Tier Filter",
+      "type": "string",
+      "description": "Filter agencies by official Zapier Solution Partner tier.",
+      "enum": ["all", "Platinum", "Gold", "Silver", "Bronze"],
+      "default": "all"
+    },
+    "maxItems": {
+      "title": "Max Agencies to Scrape & Enrich",
+      "type": "integer",
+      "description": "Maximum number of enriched Zapier Solution Partner B2B leads to extract.",
+      "default": 25,
+      "minimum": 1,
+      "maximum": 2000
+    },
+    "maxPages": {
+      "title": "Max Directory Pages to Scan",
+      "type": "integer",
+      "description": "Maximum number of Zapier Partner Directory pages (zapier.com/partnerdirectory?page=N) to crawl.",
+      "default": 5,
+      "minimum": 1,
+      "maximum": 50
+    },
+    "enrichWebsiteContacts": {
+      "title": "Enrich Verified Emails, Phones & LinkedIn from Agency Websites",
+      "type": "boolean",
+      "description": "Visit each agency's external website and /contact page to extract verified business emails, phone numbers, LinkedIn company URLs, and X/Twitter links.",
+      "default": true
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,14 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Enriched Zapier Solution Partner B2B Leads Output",
+  "description": "Enriched Zapier Solution Partners and AI automation agencies stored in the default dataset.",
+  "type": "object",
+  "properties": {
+    "overview": {
+      "type": "string",
+      "title": "Enriched Zapier Partner B2B Leads",
+      "description": "View all enriched Zapier Solution Partner leads in a structured table.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "actorSpecification": 1,
+  "name": "zapier-partner-b2b-enricher",
+  "title": "Zapier Solution Partner & AI Automation Agency B2B Enricher",
+  "description": "Scrape the official Zapier Solution Partner Directory (zapier.com/partnerdirectory) and enrich Platinum, Gold, Silver, and Bronze AI automation agencies with verified B2B emails, phone numbers, LinkedIn URLs, tech stack tools, project budgets, and services.",
+  "version": "0.1",
+  "buildTag": "latest",
+  "meta": {
+    "templateId": "python-start"
+  },
+  "input": "./input_schema.json",
+  "output": "./output_schema.json",
+  "dockerfile": "../Dockerfile",
+  "defaultRunOptions": {
+    "build": "latest",
+    "timeoutSecs": 3600,
+    "memoryMbytes": 256
+  },
+  "storages": {
+    "dataset": "./dataset_schema.json"
+  }
+}

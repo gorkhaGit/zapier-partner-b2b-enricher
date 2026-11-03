@@ -1,0 +1,56 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "partnerName": { "type": "string", "title": "Partner / Agency Name" },
+      "slug": { "type": "string", "title": "Directory Slug" },
+      "partnerTier": { "type": "string", "title": "Zapier Partner Tier" },
+      "acceptingNewClients": { "type": "string", "title": "Accepting Clients" },
+      "headquarters": { "type": "string", "title": "Headquarters / Location" },
+      "companySize": { "type": "string", "title": "Agency Size" },
+      "projectBudget": { "type": "string", "title": "Min Project Budget" },
+      "website": { "type": "string", "title": "Clean Website" },
+      "primaryEmail": { "type": "string", "title": "Primary Verified Email" },
+      "emails": { "type": "array", "title": "Verified Emails", "items": { "type": "string" } },
+      "phones": { "type": "array", "title": "Phone Numbers", "items": { "type": "string" } },
+      "linkedinUrl": { "type": "string", "title": "LinkedIn URL" },
+      "twitterUrl": { "type": "string", "title": "X / Twitter URL" },
+      "contactPageUrl": { "type": "string", "title": "Contact Page URL" },
+      "commonTools": { "type": "array", "title": "Tools Commonly Worked With", "items": { "type": "string" } },
+      "services": { "type": "array", "title": "Automation Services", "items": { "type": "string" } },
+      "industries": { "type": "array", "title": "Industries Served", "items": { "type": "string" } },
+      "serviceRegions": { "type": "array", "title": "Service Regions", "items": { "type": "string" } },
+      "languages": { "type": "array", "title": "Languages", "items": { "type": "string" } },
+      "summary": { "type": "string", "title": "Agency Overview" },
+      "profileUrl": { "type": "string", "title": "Zapier Profile URL" },
+      "scrapedAt": { "type": "string", "title": "Scraped At (UTC)" }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Enriched Zapier Partner B2B Leads",
+      "transformation": {
+        "fields": [
+          "partnerName",
+          "partnerTier",
+          "headquarters",
+          "companySize",
+          "projectBudget",
+          "website",
+          "primaryEmail",
+          "emails",
+          "phones",
+          "linkedinUrl",
+          "commonTools",
+          "services",
+          "profileUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}
